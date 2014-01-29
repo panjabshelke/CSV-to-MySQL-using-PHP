@@ -1,5 +1,17 @@
 <?php
-
+/**
+ * A simple, clean and secure CSV to MySQL using PHP Script.
+ * Available in First beta version : 0.1.
+ *
+ * CSV to MySQL using PHP First SIMPLE VERSION 0.1
+ *
+ * @author PANJABRAO SHELKE
+ * @link https://github.com/panjabshelke/CSV-to-MySQL-using-PHP
+ * 
+ * @license http://opensource.org/licenses/MIT MIT License
+ */
+ 
+ 
 define('db_name', "PanjabPHPCSV"); // folder name which contains the csv files
 define('db_path', getcwd() . "/" . db_name);
 define('db_host', 'localhost'); // Your Server Name
@@ -7,6 +19,7 @@ define('db_user', 'root'); // User Name of MySQL DATABASE
 define('db_password', ''); // Password for MySQL DATABASE
 
 create_database();
+
 //Created database function for creating database
 function create_database(){
   $mysql_handle = mysql_connect(db_host, db_user, db_password);
